@@ -67,7 +67,7 @@ if __name__ == "__main__":
     test_dataset = datasets.MNIST(
         root="./data", train=False, download=True, transform=transform
     )
-    test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
+    test_loader = DataLoader(test_dataset, batch_size=64, shuffle=True)
 
     save_path = "models/vit_mnist_best.pt"
 
